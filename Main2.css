@@ -123,6 +123,15 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 4em;
     font-weight: bolder;
-    
-    
+ 
+}
+
+footer {
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.247);
+    padding: 15px 16px;
+}
+
+.foot {
+    font-size: 1em;
+    font-weight: lighter;
 }
