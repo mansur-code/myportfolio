@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+header {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    padding: 1.5%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 4%;
+    color: rgba(10, 10, 10, 0.692);
+}
+
+#link {
+    
+    display: flex;
+    text-decoration: none;
+    transform: translateX(900px);
+    margin-top: 10px;
+}
+
+a {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+a:hover {
+    color: rgb(241, 145, 20);
+}
+
+#main, #main2 {
+
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    margin-bottom: 3%;
+    
+    
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.719);
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    animation: modal-open 0.5s;
+}
+
+.modal-content {
+    background: rgb(243, 243, 243);
+    width:50%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 24px;
+    border-radius: 5px;
+    z-index: 4;
+    
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 0 0 5px 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-left: 0;
+    margin-right: 80%;
+    padding: 15px 16px;
+    
+}
+
+.modal-header {
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+.modal-header .modal-close {
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes modal-open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
